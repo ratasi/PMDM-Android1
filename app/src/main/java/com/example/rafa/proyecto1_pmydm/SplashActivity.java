@@ -8,7 +8,7 @@ import java.util.*;
  * Created by Rafa on 13/11/2017.
  */
 
-public class SplashActivity {/*
+public class SplashActivity extends Activity{
         private long SPLASH_DELAY = 6000; //6 segundos
         @Override
         protected void onCreate (Bundle savedInstanceState){
@@ -19,7 +19,7 @@ public class SplashActivity {/*
                 @Override
                 public void run() {
                     Intent mainIntent = new Intent(getApplicationContext(),
-                            MainActivity.class);
+                            Proyecto1.class);
                     startActivity(mainIntent);
                     //Destruimos esta activity para prevenir
                     // que el usuario vuelva a este Activity presionando el boton
@@ -29,6 +29,6 @@ public class SplashActivity {/*
             };
             Timer timer = new Timer();
             timer.schedule(task, SPLASH_DELAY);
-        }*/
+        }
     }
 
